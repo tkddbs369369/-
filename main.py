@@ -31,7 +31,7 @@ for i in range(1,int(input('몇 페이지까지?'))): #찾을 페이지수
             writer_td = table.find_element(By.CSS_SELECTOR, writer_td_selector)
             writer_id = writer_td.get_attribute("data-uid")
             if writer_id == target_id:
-                print('ㅇㅇ')
+                print('이것은 구분선이여')
                 title_selector = f"#container > section.left_content > article:nth-child(3) > div.gall_listwrap.list > table > tbody > tr:nth-child({i}) > td.gall_tit.ub-word"
                 title_a = table.find_element(By.CSS_SELECTOR, title_selector)
                 title = title_a.text
